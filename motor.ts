@@ -14,8 +14,8 @@ const enum MakerBitMotorRotation {
   Brake = 8,
 }
 
-//% color=#0fbc11 icon="\uf40d" block="DC Motor"
-namespace makerbit {
+//% color=#0fbc11 icon="\uf21c" block="DC Motor"
+namespace motorbit {
   const motorRotations = [
     MakerBitMotorRotation.Forward
   ];
@@ -25,7 +25,7 @@ namespace makerbit {
    * @param motor motor, eg: MakerBitMotor.A
    * @param speed percentage in the range of -100 to 100, eg: 80
    */
-  //% blockId="makerbit_motor_run" block="run DC motor | at speed %speed \\%"
+  //% blockId="motorbit_motor_run" block="run DC motor | at speed %speed \\%"
   //% speed.min=-100
   //% speed.max=100
   //% weight=90
@@ -55,7 +55,7 @@ namespace makerbit {
    * Stops a motor.
    * @param motor motor, eg: MakerBitMotor.A
    */
-  //% blockId="makerbit_motor_stop" block="stop motor %motor"
+  //% blockId="motorbit_motor_stop" block="stop motor %motor"
   //% weight=89
   export function stopMotor(): void {
       pins.digitalWritePin(DigitalPin.P12, 0);
@@ -66,7 +66,7 @@ namespace makerbit {
    * Apply brakes to the motor.
    * @param motor motor, eg: MakerBitMotor.A
    */
-  //% blockId="makerbit_brake_stop" block="brake motor %motor | (experimental)"
+  //% blockId="motorbit_brake_stop" block="brake motor %motor | (experimental)"
   //% weight=89
   export function brakeMotor(): void {
       pins.digitalWritePin(DigitalPin.P12, 1);
@@ -80,7 +80,7 @@ namespace makerbit {
    * @param motor motor, eg: MakerBitMotor.A
    * @param rotation rotation of the motor, eg: MakerBitMotorRotation.Forward
    */
-  //% blockId=makerbit_motor_set_rotation block="set DC motor rotation | to %rotation"
+  //% blockId=motorbit_motor_set_rotation block="set DC motor rotation | to %rotation"
   //% weight=88
   export function setMotorRotation(
     rotation: MakerBitMotorRotation
