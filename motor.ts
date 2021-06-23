@@ -45,7 +45,7 @@ namespace makerbit {
       // Avoid PWM whenever possible as only 3 concurrent PWM outputs are available on the microbit
       pins.digitalWritePin(isClockwise ? DigitalPin.P13: DigitalPin.P12, 1);
     } else {
-      pins.digitalWritePin(isClockwise ? AnalogPin.P13: AnalogPin.P12, analogSpeed);
+      pins.analogWritePin(isClockwise ? AnalogPin.P13: AnalogPin.P12, analogSpeed);
     }
     
 
