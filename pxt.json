@@ -1,0 +1,18 @@
+{
+    "name": "DrawBridge-Motor",
+    "version": "1.0.9",
+    "description": "Motor controller for TomatoCube DrawBridge controller",
+    "license": "MIT",
+    "dependencies": {
+        "core": "*"
+    },
+    "files": [
+        "README.md",
+        "motor.ts",
+        "_locales/de/MakerBit-Motor-strings.json"
+    ],
+    "testFiles": [
+        "test.ts"
+    ],
+    "public": true
+}
