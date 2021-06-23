@@ -1,6 +1,6 @@
 {
     "name": "DrawBridge-Motor",
-    "version": "1.0.9",
+    "version": "1.0.10",
     "description": "Motor controller for TomatoCube DrawBridge controller",
     "license": "MIT",
     "dependencies": {
