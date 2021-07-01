@@ -10,8 +10,6 @@ const enum MakerBitMotorRotation {
   Forward = 1,
   //% block="backward"
   Backward = -1,
-  //% block="brake"
-  Brake = 8,
 }
 
 //% color=#0fbc11 icon="\uf21c" block="DC Motor"
