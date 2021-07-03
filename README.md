@@ -5,30 +5,30 @@ MakeCode package for the TomatoCube Drawbridge motor driver.
 
 ## Motor Blocks
 
-The MakerBit board provides a motor controller that can control two bi-directional DC motors, or four one-direction motors.
+The Lighthouse drawbridge board provides a motor controller that can control one bi-directional DC motors.
 
-### MakerBit runMotor
+### runMotor
 
 Sets the speed of a motor in the range of -100 to 100.
 
 ```sig
-makerbit.runMotor(MakerBitMotor.A, 80)
+runMotor(MakerBitMotor.A, 80)
 ```
 
-### MakerBit stopMotor
+### stopMotor
 
 Stops a motor.
 
 ```sig
-makerbit.stopMotor(MakerBitMotor.A)
+stopMotor(MakerBitMotor.A)
 ```
 
-### MakerBit setMotorDirection
+### setMotorDirection
 
 Sets the rotation direction of a motor. Use this function at start time to configure your motors without the need to rewire.
 
 ```sig
-makerbit.setMotorRotation(MakerBitMotor.A, MakerBitMotorRotation.Backward)
+setMotorRotation(MakerBitMotor.A, MakerBitMotorRotation.Backward)
 ```
 
 ## License
